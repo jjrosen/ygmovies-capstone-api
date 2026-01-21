@@ -10,10 +10,17 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+#movies routes
   get "/movies" => "movies#index"
   get "/movies/:id"=> "movies#show"
   post "/movies"=> "movies#create"
   patch "/movies/:id"=> "movies#update"
-  destroy "/movies/:id"=> "movies#destroy"
+  delete "/movies/:id"=> "movies#destroy"
+
+  #genres routes
+  get "/genres" => "genres#index"
+  get "/genres/:id"=> "genres#show"
+  post "/genres"=> "genres#create"
+  patch "/genres/:id"=> "genres#update"
+  delete "/genres/:id"=> "genres#destroy"
 end

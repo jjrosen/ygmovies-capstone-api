@@ -7,5 +7,5 @@ json.actors movie.actors
 json.rating movie.rating
 json.user_rating movie.user_rating
 json.release_date movie.release_date
-json.genre movie.genre
+json.genres movie.genres
 json.run_time movie.run_time
